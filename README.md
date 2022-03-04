@@ -1,2 +1,2 @@
 # BOTS
-Desenvolvimento de chatBots com Python
+Desenvolvimento de chatBots em Python
