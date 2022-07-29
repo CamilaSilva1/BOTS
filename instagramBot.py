@@ -1,20 +1,21 @@
 #Criado por Camila Silva
 #Este script é responsavel pela criação completa do bot para Instagram
 
-#importar as bibliotecas
+#importando as bibliotecas
 from selenium import webdriver
 import time
 from webdriver_manager import driver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 
+#setando username e senha para acessar a conta no Instagram
 class instagramBot:
     def __init__(self, username, password):
         self.username = username
         self.password = password
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
         
-
+    #bot realizando o login com o preenchimento dos fieldsets
     def login(self):
         driver = self.driver
         driver.get('https://www.instagram.com')  
@@ -36,19 +37,20 @@ class instagramBot:
         salvar_info.click()
         self.procurar_perfil('camila_da_silva_assis')
         
-
+    #bot procurando pelo perfil pesquisado
     def procurar_perfil(self, nome):
         driver = self.driver
         driver.get('https://www.instagram.com/' + nome + '/')
         
         
        
- 
+#setando email e senha ao bot (email e senha ficticios)
 camilaBot = instagramBot('camila1234@gmail.com', '123')
+#chamando função login
 camilaBot.login()
 
 
-#daniieel_castro10
+
 
 
    
