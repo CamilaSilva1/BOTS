@@ -1,3 +1,6 @@
+#Criado por Camila Silva
+#Este script é responsavel pela criação completa do bot para WhatsApp
+
 #importar as bibliotecas
 from selenium import webdriver
 import time
